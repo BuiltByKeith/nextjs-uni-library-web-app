@@ -10,14 +10,19 @@ const Header = () => {
   const pathName = usePathname();
   return (
     <header className="my-10 flex justify-between gap-5">
-      <Link href={"/"} className="flex flex-row justify-center items-center gap-6">
+      <Link
+        href={"/"}
+        className="flex flex-row justify-center items-center gap-6"
+      >
         <Image
           src={"/icons/logo.svg"}
           alt="logo"
           width={40}
           height={40}
         ></Image>
-        <p className="font-bebas-neue font-semibold text-4xl text-primary">UniLib</p>
+        <p className="font-bebas-neue font-semibold text-4xl text-white">
+          UniLib
+        </p>
       </Link>
       <ul className="flex flex-row items-center gap-8">
         <li>
